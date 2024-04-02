@@ -10,8 +10,7 @@ name: Java CI with Maven
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [ "fix_cors_in_non-default_port_nginx" ]
 jobs:
   build:
 

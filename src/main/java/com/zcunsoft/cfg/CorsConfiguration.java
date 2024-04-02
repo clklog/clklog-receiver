@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class CorsConfiguration implements WebMvcConfigurer {
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**").allowedOrigins("*").allowedMethods("*")
+		registry.addMapping("/**").allowedOriginPatterns("*").allowedMethods("*")
 				.allowedHeaders("x-requested-with", "accept", "authorization", "content-type")
 				.exposedHeaders("access-control-allow-headers", "access-control-allow-methods",
 						"access-control-allow-origin", "access-control-max-age", "X-Frame-Options")
